@@ -36,7 +36,7 @@ def get_stock_data(api_key: str, symbol: str, start_date: str, end_date: str) ->
 @st.cache_data
 def make_stock_price_df(start_date: str, end_date: str) -> pd.DataFrame:
     """Return dataframe with stock price timeseries with date as index."""
-    api_key = st.secrets['api_key']
+    api_key = st.secrets["api"]["key"]
     
     df_aapl = get_stock_data(api_key, 'AAPL', start_date, end_date)
     df_aapl = df_aapl[['close']].rename(columns={'close': 'AAPL'})
