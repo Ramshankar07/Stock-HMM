@@ -1,4 +1,5 @@
 # Stock Price Forecaster
+Deployed Link: https://stock-hmm-analysis.streamlit.app/
 This is a Streamlit application designed to forecast stock prices using a Hidden Markov Model (HMM) based on historical stock price data. The application enables users to view 1-day and multi-day forecasts for several major tech stocks, including:
 - Apple Inc. (AAPL)
 - Tesla Inc. (TSLA)
